@@ -2,7 +2,7 @@
 
 #### project goals. 
 this is our final project for Automumos-vihicels, the project is divided into several parts :
-1. automation of photogrametry using ODM.
+1. automation of photogrametry using ODM.<br/>
   1.1. in this phase we use pyodm (python library) and Cython (convert pyhton code to C code)
 3. using cloud compare to analyze and export 3d MESH
 4. importing said MESH into unity and playing the game.
