@@ -19,7 +19,7 @@ this is our final project for Automumos-vihicels, the project is divided into tw
         C. ODM will work on the array of images.
           C.1. the defualt overlap of images is 30 , meaning first 0-50 images, then 30-80 and so forth.
 7. once finished with all of the images,a .las file will be created in a folder name "results", take that and drag it into cloud compare.
-insert image 1
+<img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/cc1.png"/>
 8. click on the .las file similar to the above image. (notice the yellow border) 
 9. now we need to normilize the points, go to Edit->Normals->compute - this sould take a while. (this will compute minimun spaning tree over the point cloud)
 insert image 2
