@@ -1,9 +1,12 @@
-# Unity-point-cloud and photogrametry using ODM
+# Autonomous 3d modeling from video
 
 #### project goals. 
 this is our final project for Automumos-vihicels, the project is divided into several parts :
 1. automation of photogrametry using ODM.<br/>
   1.1. in this phase we use pyodm (python library) and Cython (convert pyhton code to C code)
+  1.2. IMPORTAT - go to the file extract_photos_from_video and use the commands in comment to run the code.<br/>
+        run with: docker run -ti -p 3000:3000 opendronemap/nodeodm.<br/>
+        python setup.py build_ext --inplace.<br/>
 3. using cloud compare to analyze and export 3d MESH
 4. importing said MESH into unity and playing the game.
 
