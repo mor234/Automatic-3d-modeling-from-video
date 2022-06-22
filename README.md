@@ -11,7 +11,7 @@ this is our final project for Automumos-vihicels, the project is divided into tw
 2. put a video file, from your drone in the folder you have just created, name it vedio1.mp4.
 3. donwload and install docker desktop (for ODM to analyze images)
 4. donwload and install cloud-compare.
-5. run the following command to run docker image in cmd - "docker run -ti -p 3000:3000 opendronemap/nodeodm" - this may take a while
+5. run the following command to run docker image in cmd - "docker run -ti -p 3000:3000 --gpus all opendronemap/nodeodm:gpu" - this may take a while
 6. you can go to https://localhost:3000 to see the task.<br />><img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/task.png"/><br />
 7. run - extract_photos_from_video.py. -this should take a while.
   6.1. this code will run thorugh the video and:<br />
