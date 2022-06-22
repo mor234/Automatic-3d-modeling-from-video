@@ -12,7 +12,8 @@ this is our final project for Automumos-vihicels, the project is divided into tw
 3. donwload and install docker desktop (for ODM to analyze images)
 4. donwload and install cloud-compare.
 5. run the following command to run docker image in cmd - "docker run -ti -p 3000:3000 opendronemap/nodeodm" - this may take a while
-6. run - extract_photos_from_video.py. -this should take a while.
+6. you can go to https://localhost:3000 to see the task.<br />><img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/task.png"/><br />
+7. run - extract_photos_from_video.py. -this should take a while.
   6.1. this code will run thorugh the video and:<br />
         A. a folder named data will be created.<br />
         B. each frame (as defulat there will be 25 frames per second), will be created as a new image in the data folder.<br />
