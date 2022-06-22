@@ -1,4 +1,4 @@
-# Autonomous 3d modeling from video
+# Automatic 3d modeling from video
 
 #### project goals. 
 this is our final project for Automumos-vihicels, the project is divided into several parts :
