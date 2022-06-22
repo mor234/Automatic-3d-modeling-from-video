@@ -18,17 +18,17 @@ this is our final project for Automumos-vihicels, the project is divided into tw
         B. each frame (as defulat there will be 25 frames per second), will be created as a new image in the data folder.<br />
         C. ODM will work on the array of images.<br />
           C.1. the defualt overlap of images is 30 , meaning first 0-50 images, then 30-80 and so forth.<br />
-7. once finished with all of the images,a .las file will be created in a folder name "results", take that and drag it into cloud compare.
-<img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/cc1.png"/>
-8. click on the .las file similar to the above image. (notice the yellow border) 
-9. now we need to normilize the points, go to Edit->Normals->compute - this sould take a while. (this will compute minimun spaning tree over the point cloud)
-insert image 2
-insert image 2-1
-10. now go to Plugins->PossionRecon .
-insert image 3
-11. now the value of Octreedepht will determine how accurate the sofware will make the 3d mesh, 10- is viable, 14 is very sharp 3dmesh but will be heavy in performace. - this shold take a while!
-insert image 3-1
-12. now we can see in the heat map, that blue areas are places with few dots, and red are places with a lot of dots, you can slide  the bar to the irght same as in 
-    the image below to use only places with big concetrations of dots. (see that the bar starts from the middle?)
-insert image 4
+7. once finished with all of the images,a .las file will be created in a folder name "results", take that and drag it into cloud compare.<br />
+<img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/cc1.png"/><br />
+8. click on the .las file similar to the above image. (notice the yellow border) <br />
+9. now we need to normilize the points, go to Edit->Normals->compute - this sould take a while. (this will compute minimun spaning tree over the point cloud)<br />
+<img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/cc2.png"/><br />
+<img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/cc2-1.png"/><br />
+10. now go to Plugins->PossionRecon.<br />
+<img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/cc3.png"/><br />
+11. now the value of Octreedepht will determine how accurate the sofware will make the 3d mesh, 10- is viable, 14 is very sharp 3dmesh but will be heavy in performace. - this shold take a while!<br />
+<img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/cc3-1.png"/><br />
+12. now we can see in the heat map, that blue areas are places with few dots, and red are places with a lot of dots, you can slide  the bar to the irght same as in <br />
+    the image below to use only places with big concetrations of dots. (see that the bar starts from the middle?)<br />
+<img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/cc4.png"/><br />
 13. now save the file as FBX BINARY and import in to unity!
