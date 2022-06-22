@@ -13,11 +13,11 @@ this is our final project for Automumos-vihicels, the project is divided into tw
 4. donwload and install cloud-compare.
 5. run the following command to run docker image in cmd - "docker run -ti -p 3000:3000 opendronemap/nodeodm" - this may take a while
 6. run - extract_photos_from_video.py. -this should take a while.
-  6.1. this code will run thorugh the video and:
-        A. a folder named data will be created.
-        B. each frame (as defulat there will be 25 frames per second), will be created as a new image in the data folder.
-        C. ODM will work on the array of images.
-          C.1. the defualt overlap of images is 30 , meaning first 0-50 images, then 30-80 and so forth.
+  6.1. this code will run thorugh the video and:<br />
+        A. a folder named data will be created.<br />
+        B. each frame (as defulat there will be 25 frames per second), will be created as a new image in the data folder.<br />
+        C. ODM will work on the array of images.<br />
+          C.1. the defualt overlap of images is 30 , meaning first 0-50 images, then 30-80 and so forth.<br />
 7. once finished with all of the images,a .las file will be created in a folder name "results", take that and drag it into cloud compare.
 <img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/cc1.png"/>
 8. click on the .las file similar to the above image. (notice the yellow border) 
