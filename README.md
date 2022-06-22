@@ -1,10 +1,11 @@
 # Unity-point-cloud and photogrametry using ODM
 
 #### project goals. 
-this is our final project for Automumos-vihicels, the project is divided into two parts :
+this is our final project for Automumos-vihicels, the project is divided into several parts :
 1. automation of photogrametry using ODM.
-2. using cloud compare to analyze and export 3d MESH
-3. importing said MESH into unity and playing the game.
+  1.1. in this phase we use pyodm (python library) and Cython (convert pyhton code to C code)
+3. using cloud compare to analyze and export 3d MESH
+4. importing said MESH into unity and playing the game.
 
 #### instructions.
 1. clone this repository.
