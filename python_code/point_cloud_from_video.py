@@ -5,14 +5,12 @@ import sys
 import extract_photos_Cython as cython
 
 # read instructions.
-# run with: docker run -ti -p 3000:3000 --gpus all opendronemap/nodeodm:gpu
-# docker run -ti -p 3000:3000 opendronemap/nodeodm
-# python setup.py build_ext --inplace
+# to run docker (with all gpus): docker run -ti -p 3000:3000 --gpus all opendronemap/nodeodm:gpu
+# to run docker : docker run -ti -p 3000:3000 opendronemap/nodeodm
+# to compile cyhton code :python setup.py build_ext --inplace
 # pip install openCV-python 
 
-
 sys.path.append('..')
-
 
 def produce_images_from_video( frameRate:float, count:int, cam,image_dir_name:str="data"):
     """
@@ -87,7 +85,7 @@ def create_point_clouds(photo_amount,photos_per_cloud:int=50,overlap:int=20,imag
             list_img[i]='/'.join(split_path)
             if((frame_number+img_to_jump)==photo_amount):#no more photos
                 last_round=True
-                index_to_remove_from=i
+                index_to_remove_from = i
                 break
         #in last round remove extra frames.
         if (last_round):
@@ -129,15 +127,14 @@ def create_point_cloud_from_range_odm(list_img,node):
 if __name__ == "__main__":
 
     # constants
-    address = dir_path = os.path.dirname(os.path.realpath(__file__)) +"\\video1.MP4"
+    address = os.path.dirname(os.path.realpath(__file__)) +"\\video1.MP4"
     cam = cv2.VideoCapture(address)
 
     # calculations
     fps = cam.get(cv2.CAP_PROP_FPS)
     frame_count = int(cam.get(cv2.CAP_PROP_FRAME_COUNT))
-    duration, chunk = frame_count/fps, 25
-    myframerate = duration / (duration * chunk)
+    duration, number_of_frames_per_second = frame_count/fps, 25
+    myframerate = duration / (duration * number_of_frames_per_second)
 
-
-    photo_amount = produce_images_from_video( 0.25, 0, cam,"data")
-    create_point_clouds(photo_amount ,images_dir_path="data")
+    # photo_amount = produce_images_from_video( myframerate, 0, cam,"data")
+    create_point_clouds(450 ,images_dir_path="data")
