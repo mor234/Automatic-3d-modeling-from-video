@@ -109,7 +109,8 @@ def create_point_cloud_from_range_odm(list_img,node):
     try:
         # Start a task
         print("Uploading images...")
-        # if use higher quality images: task = node.create_task(list_img,  {'feature-quality':'medium','mesh-octree-depth':8,'pc-las':True,'pc-quality':'low','end-with':'mvs_texturing' })
+        # if use higher quality images: 
+        #task = node.create_task(list_img,  {'feature-quality':'low','mesh-octree-depth':8,'pc-las':True,'pc-quality':'low','end-with':'mvs_texturing' })
         task = node.create_task(list_img,  {'mesh-octree-depth':8,'end-with':'mvs_texturing' })
         print(task.info())
         try:
@@ -137,6 +138,6 @@ if __name__ == "__main__":
     duration, chunk = frame_count/fps, 25
     myframerate = duration / (duration * chunk)
 
-    
+
     photo_amount = produce_images_from_video( 0.25, 0, cam,"data")
     create_point_clouds(photo_amount ,images_dir_path="data")
