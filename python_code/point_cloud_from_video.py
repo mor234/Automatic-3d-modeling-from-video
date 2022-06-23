@@ -136,5 +136,5 @@ if __name__ == "__main__":
     duration, number_of_frames_per_second = frame_count/fps, 25
     myframerate = duration / (duration * number_of_frames_per_second)
 
-    # photo_amount = produce_images_from_video( myframerate, 0, cam,"data")
-    create_point_clouds(450 ,images_dir_path="data")
+    photo_amount = produce_images_from_video( myframerate, 0, cam,"data")
+    create_point_clouds(photo_amount ,images_dir_path="data")
