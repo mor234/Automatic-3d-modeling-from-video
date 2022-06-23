@@ -75,7 +75,7 @@ def create_point_clouds(photo_amount,photos_per_cloud:int=50,overlap:int=20,imag
     last_round=False
     loop_index=0 #keep the number of the sub cloud
     while (True):
-        create_point_cloud_from_range_odm(list_img,node,"results"+str(loop_index))
+        create_point_cloud_from_range_odm(list_img,node)
         if(last_round): #end loop
             break
         index_to_remove_from=0
@@ -99,12 +99,12 @@ def create_point_clouds(photo_amount,photos_per_cloud:int=50,overlap:int=20,imag
 
 
       
-def create_point_cloud_from_range_odm(list_img,node,results_dir:str="results"):
+def create_point_cloud_from_range_odm(list_img,node):
     """
         The function create point cloud from given images. 
         :param list_img: list of images paths, relative to current directory
         :param node: a client to interact with NodeODM API.
-        :param results_dir: The directory name for output 
+         
     """
     try:
         # Start a task
@@ -118,10 +118,6 @@ def create_point_cloud_from_range_odm(list_img,node,results_dir:str="results"):
             task.wait_for_completion()
             print("Task completed, download results from http://localhost:3000/")
             
-            # Retrieve results -when in comment, download manually from the docker 
-            #task.download_assets("./"+str(results_dir))
-            # print("Assets saved in ./"+str(results_dir)+" (%s)" % os.listdir("./"+str(results_dir)))
-
         except exceptions.TaskFailedError as e:
             print("\n".join(task.output()))
     except exceptions.NodeConnectionError as e:
@@ -141,6 +137,6 @@ if __name__ == "__main__":
     duration, chunk = frame_count/fps, 25
     myframerate = duration / (duration * chunk)
 
-    #photo_amount = produce_images_from_video( 0.25, 0, cam,"data")
-    photo_amount=73
+    
+    photo_amount = produce_images_from_video( 0.25, 0, cam,"data")
     create_point_clouds(photo_amount ,images_dir_path="data")
