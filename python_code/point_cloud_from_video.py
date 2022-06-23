@@ -5,7 +5,8 @@ import sys
 import extract_photos_Cython as cython
 
 # read instructions.
-# run with: docker run -ti -p 3000:3000 opendronemap/nodeodm
+# run with: docker run -ti -p 3000:3000 --gpus all opendronemap/nodeodm:gpu
+# docker run -ti -p 3000:3000 opendronemap/nodeodm
 # python setup.py build_ext --inplace
 # pip install openCV-python 
 
@@ -64,6 +65,7 @@ def create_point_clouds(photo_amount,photos_per_cloud:int=50,overlap:int=20,imag
     counter=0
     list_img = []
     img_to_jump=photos_per_cloud-overlap
+    # # create client for odm api
     node = Node("localhost", 3000)
     #initial assignment off first  photos_per_cloud images
     for index in range(counter, photos_per_cloud):#create first_list
@@ -83,7 +85,7 @@ def create_point_clouds(photo_amount,photos_per_cloud:int=50,overlap:int=20,imag
             frame_number=int(split_path[-1].replace("frame","").replace(".jpg",""))
             split_path[-1]="frame"+str(frame_number+img_to_jump)+".jpg"
             list_img[i]='/'.join(split_path)
-            if((frame_number+img_to_jump)==photo_amount):#no more phtoes
+            if((frame_number+img_to_jump)==photo_amount):#no more photos
                 last_round=True
                 index_to_remove_from=i
                 break
@@ -94,23 +96,31 @@ def create_point_clouds(photo_amount,photos_per_cloud:int=50,overlap:int=20,imag
         loop_index+=1
 
 
+
+
       
 def create_point_cloud_from_range_odm(list_img,node,results_dir:str="results"):
-
-    node = Node("localhost", 3000)
+    """
+        The function create point cloud from given images. 
+        :param list_img: list of images paths, relative to current directory
+        :param node: a client to interact with NodeODM API.
+        :param results_dir: The directory name for output 
+    """
     try:
         # Start a task
         print("Uploading images...")
-        task = node.create_task(list_img, {'mesh-octree-depth':8,'end-with':'mvs_texturing'} )
+        # if use higher quality images: task = node.create_task(list_img,  {'feature-quality':'medium','mesh-octree-depth':8,'pc-las':True,'pc-quality':'low','end-with':'mvs_texturing' })
+        task = node.create_task(list_img,  {'mesh-octree-depth':8,'end-with':'mvs_texturing' })
         print(task.info())
         try:
             # This will block until the task is finished
             # or will raise an exception
             task.wait_for_completion()
-            print("Task completed, downloading results...")
-            # Retrieve results
-            task.download_assets("./"+str(results_dir))
-            print("Assets saved in ./"+str(results_dir)+" (%s)" % os.listdir("./"+str(results_dir)))
+            print("Task completed, download results from http://localhost:3000/")
+            
+            # Retrieve results -when in comment, download manually from the docker 
+            #task.download_assets("./"+str(results_dir))
+            # print("Assets saved in ./"+str(results_dir)+" (%s)" % os.listdir("./"+str(results_dir)))
 
         except exceptions.TaskFailedError as e:
             print("\n".join(task.output()))
@@ -131,5 +141,6 @@ if __name__ == "__main__":
     duration, chunk = frame_count/fps, 25
     myframerate = duration / (duration * chunk)
 
-    photo_amount = produce_images_from_video( 0.25, 0, cam,"data")
+    #photo_amount = produce_images_from_video( 0.25, 0, cam,"data")
+    photo_amount=73
     create_point_clouds(photo_amount ,images_dir_path="data")
