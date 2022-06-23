@@ -43,3 +43,11 @@ this is our final project for Automumos-vihicels, the project is divided into se
 ### For Future Work:
 - Number of frame per second taken from video can be adjasted.
 - Allow lens repair (for a Go-Pro video for example), to create better quality photogrammetry.
+
+
+### Unity : 
+In this video we want to show the  result that we got, the connection between the points cloud to the  Unity game.
+We want to show that the unity game base on the points cloud.
+Where was a tree in the points cloud we creates tree object just to make it look good and comfortable.
+
+![](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/main/Gifs/ezgif.com-gif-maker%20(1).gif)
