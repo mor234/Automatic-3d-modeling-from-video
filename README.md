@@ -23,7 +23,7 @@ this is our final project for Automumos-vihicels, the project is divided into se
         B. each frame (as defulat there will be 25 frames per second), will be created as a new image in the data folder.<br />
         C. ODM will work on the array of images.<br />
           C.1. the defualt overlap of images is 20 , meaning first 0-50 images, then 30-80 and so forth.<br />
-7. once finished with all of the images, open http://localhost:3000/ on your broweser. download all theassets created. a .laz file will be created for each sub point cloud. take that and drag it into cloud compare. align and combine the clouds.<br />
+7. once finished with all of the images, open http://localhost:3000/ on your broweser. download all the assets created. a .laz file will be created for each sub point cloud. take that and drag it into cloud compare. align and combine the clouds.<br />
 <img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/cc1.png"/><br />
 8. click on the .las file similar to the above image. (notice the yellow border) <br />
 9. now we need to normilize the points, go to Edit->Normals->compute - this sould take a while. (this will compute minimun spaning tree over the point cloud)<br />
