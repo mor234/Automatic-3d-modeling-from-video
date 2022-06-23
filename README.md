@@ -37,3 +37,7 @@ this is our final project for Automumos-vihicels, the project is divided into se
     the image below to use only places with big concetrations of dots. (see that the bar starts from the middle?)<br />
 <img src="https://github.com/mor234/Unity-point-cloud/blob/main/images/cc4.png"/><br />
 13. now save the file as FBX BINARY and import in to unity!
+
+### For Future Work:
+- Number of frame per second taken from video can be adjasted.
+- Allow lens repair (for a Go-Pro video for example), to create better quality photogrammetry.
