@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/74238558/175327504-c6d78025-fd1e-4e3c-9bb6-fe9a95724ef6.png)
+
 # Automatic 3d modeling from video
 
 #### project goals. 
