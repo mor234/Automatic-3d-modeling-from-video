@@ -1,9 +1,9 @@
 
-# Example of usage
+# Usage of code
 
-This is an example of usage of the code for high qulity simulation video taken from:
+This is an example of usage of the code on high qulity simulation video taken from:
  https://www.youtube.com/watch?v=FfCfxlllwtU&ab_channel=Helderhugo. 
- The video wase downloaded and cut to be 3 minutes that showes the tower.
+ The video was downloaded and cut to be 3 minutes that showes the tower.
  It was named "video1" and place in the same directory as the python code.
 ## Changes inside the main in the code: 
  - **number_of_frames_per_second** was assigned 2.5  
@@ -30,6 +30,7 @@ if __name__ == "__main__":
 Open http://localhost:3000/ and download "all assets"
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
 From each results directory, thake the point cloud from the **odm_georeferencing** dirctory
+You can see the reaulting sub clouds in the directory "sub clouds towers example" 
 
 ## Merge points clouds
 Open the points clouds on cloud compare and combine them.
