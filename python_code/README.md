@@ -25,12 +25,17 @@ if __name__ == "__main__":
     photo_amount = produce_images_from_video( myframerate, 0, cam,"data")
     create_point_clouds(photo_amount ,images_dir_path="data",photos_per_cloud=70,overlap=40)
 ```
+## Run code
+ - Compile cyhton code :python setup.py build_ext --inplace
+ - Open docker, and run docker run -ti -p 3000:3000 --gpus all opendronemap/nodeodm:gpu on cmd
+ - Run code
 
 ## Download subclouds results
-Open http://localhost:3000/ and download "all assets"
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+Open http://localhost:3000/ on your broweser and download "all assets"
+![localhost](https://gitub.com/mor234/Automatic-3d-modeling-from-video/blob/main/images/loacl_host_view.png)
 From each results directory, thake the point cloud from the **odm_georeferencing** dirctory
 You can see the reaulting sub clouds in the directory "sub clouds towers example" 
+![localhost](https://gitub.com/mor234/Automatic-3d-modeling-from-video/blob/main/images/loacl_host_view.png)
 
 ## Merge points clouds
 Open the points clouds on cloud compare and combine them.
