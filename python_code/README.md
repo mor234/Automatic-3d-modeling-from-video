@@ -32,7 +32,7 @@ if __name__ == "__main__":
 
 ## Download subclouds results
 Open http://localhost:3000/ on your broweser and download "all assets"
-![localhost](https://gitub.com/mor234/Automatic-3d-modeling-from-video/blob/main/images/loacl_host_view.png)
+![localhost](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/1ec771404b6617cf6a5abacb84825bb41fbc8ca5/images/loacl_host_view.png)
 From each results directory, thake the point cloud from the **odm_georeferencing** dirctory
 You can see the reaulting sub clouds in the directory "sub clouds towers example" 
 ![localhost](https://gitub.com/mor234/Automatic-3d-modeling-from-video/blob/main/images/loacl_host_view.png)
