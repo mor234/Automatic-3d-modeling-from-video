@@ -25,6 +25,7 @@ if __name__ == "__main__":
     photo_amount = produce_images_from_video( myframerate, 0, cam,"data")
     create_point_clouds(photo_amount ,images_dir_path="data",photos_per_cloud=70,overlap=40)
 ```
+For more options to adjust the create point clouds: https://docs.opendronemap.org/sw/arguments/ 
 ## Run code
  - Compile cyhton code :python setup.py build_ext --inplace
  - Open docker, and run docker run -ti -p 3000:3000 --gpus all opendronemap/nodeodm:gpu on cmd
