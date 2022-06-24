@@ -31,11 +31,12 @@ if __name__ == "__main__":
  - Run code
 
 ## Download subclouds results
-Open http://localhost:3000/ on your broweser and download "all assets"
+Open http://localhost:3000/ on your broweser and download "all assets", for each sub cloud.
 ![localhost](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/1ec771404b6617cf6a5abacb84825bb41fbc8ca5/images/loacl_host_view.png)
-From each results directory, thake the point cloud from the **odm_georeferencing** dirctory
+
+>> From each results directory, take the point cloud from the **odm_georeferencing** directory
 You can see the reaulting sub clouds in the directory "sub clouds towers example" 
-![localhost](https://gitub.com/mor234/Automatic-3d-modeling-from-video/blob/main/images/loacl_host_view.png)
+![subcloud](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/286345a700e227e493235b2c285d8ce69acfbf05/images/sub_cloud_example.png)
 
 ## Merge points clouds
 Open the points clouds on cloud compare and combine them.
