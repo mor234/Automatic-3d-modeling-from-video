@@ -4,6 +4,7 @@
 This is an example of usage of the code on high qulity simulation video taken from:
  https://www.youtube.com/watch?v=FfCfxlllwtU&ab_channel=Helderhugo. 
  The video was downloaded and cut to be 3 minutes that showes the tower.
+ ![tower_from_video](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/a011fb347f7069ee44750ce8538e7d3608d3a221/images/video_tower.png)
  It was named "video1" and place in the same directory as the python code.
 ## Changes inside the main in the code: 
  - **number_of_frames_per_second** was assigned 2.5  
@@ -41,7 +42,9 @@ You can see the reaulting sub clouds in the directory "sub clouds towers example
 
 ## Merge points clouds
 Open the points clouds on cloud compare and combine them.
-you can use the following tuturial: https://www.youtube.com/watch?v=8lxFsXgXdTY&t=204s
-
-## Create 3d model
+One useful operation is multiply scale (so the points cloud you are combining will be in the same size):
+![multiply scale](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/a011fb347f7069ee44750ce8538e7d3608d3a221/images/multiply_scale.png)
+For the rest, you can use the following tuturial: https://www.youtube.com/watch?v=8lxFsXgXdTY&t=204s
+![combined cloud](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/5a19465a0f2175c9b7b713d76a47043a756a55ce/images/combined_tower_point_cloud.png)
+## Create 3d model for unity
 Follow instructions from main readme: https://github.com/mor234/Automatic-3d-modeling-from-video/blob/main/README.md
