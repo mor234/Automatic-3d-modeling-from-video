@@ -53,3 +53,5 @@ We want to show that the unity game base on the points cloud.
 Where was a tree in the points cloud we creates tree object just to make it look good and comfortable.
 
 ![](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/main/Gifs/ezgif.com-gif-maker%20(1).gif)
+
+![](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/main/Gifs/Unity-point-cloud%20-%20SampleScene%20-%20Windows%2C%20Mac%2C%20Linux%20-%20Unity%202021.3.3f1%20Personal%20_DX11_%202022-06-23%2017-57-46_converted.gif)
