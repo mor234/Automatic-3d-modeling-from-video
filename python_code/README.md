@@ -33,18 +33,18 @@ For more options to adjust the create point clouds: https://docs.opendronemap.or
  - Run code
 
 ## Download subclouds results
-Open http://localhost:3000/ on your broweser and download "all assets", for each sub cloud.
+Open http://localhost:3000/ on your broweser and download "all assets", for each sub cloud.<br/>
 ![localhost](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/1ec771404b6617cf6a5abacb84825bb41fbc8ca5/images/loacl_host_view.png)
 
 From each results directory, take the point cloud from the **odm_georeferencing** directory
-You can see the reaulting sub clouds (and the combined cloud) in the directory "tower clouds example" 
+You can see the reaulting sub clouds (and the combined cloud) in the directory "tower clouds example" <br/>
 ![subcloud](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/286345a700e227e493235b2c285d8ce69acfbf05/images/sub_cloud_example.png)
 
 ## Merge points clouds
 Open the points clouds on cloud compare and combine them.
-One useful operation is multiply scale (so the points cloud you are combining will be in the same size):
+One useful operation is multiply scale (so the points cloud you are combining will be in the same size):<br/>
 ![multiply scale](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/a011fb347f7069ee44750ce8538e7d3608d3a221/images/multiply_scale.png)
-For the rest, you can use the following tuturial: https://www.youtube.com/watch?v=8lxFsXgXdTY&t=204s
+For the rest, you can use the following tuturial: https://www.youtube.com/watch?v=8lxFsXgXdTY&t=204s<br/>
 ![combined cloud](https://github.com/mor234/Automatic-3d-modeling-from-video/blob/5a19465a0f2175c9b7b713d76a47043a756a55ce/images/combined_tower_point_cloud.png)
 ## Create 3d model for unity
 Follow instructions from main readme: https://github.com/mor234/Automatic-3d-modeling-from-video/blob/main/README.md
