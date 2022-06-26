@@ -65,6 +65,6 @@ https://github.com/mor234/Automatic-3d-modeling-from-video/tree/main/python_code
 
 ##
 ### Praticipants:
-- Gidon Aziz
+- Gidon Avziz
 - Moriya Elgrably.
 - Elad Vaknin.
